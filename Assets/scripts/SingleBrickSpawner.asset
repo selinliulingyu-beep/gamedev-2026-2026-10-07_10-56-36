@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SingleBrickSpawner
+  m_EditorClassIdentifier: Unity.VisualScripting.Flow::Unity.VisualScripting.ScriptGraphAsset
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":62.66675,"y":-65.36507},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-209.0,"y":-310.0},"guid":"f2e48f7f-af4e-4918-95b1-46db5e941192","$version":"A","$type":"Unity.VisualScripting.Start","$id":"9"},{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":60.0},"guid":"0a177941-fdbb-48ff-9365-0ee1b17bf2e5","$version":"A","$type":"Unity.VisualScripting.Update"},{"chainable":false,"parameterNames":["original","position","rotation","parent"],"member":{"name":"Instantiate","parameterTypes":["UnityEngine.Object","UnityEngine.Vector3","UnityEngine.Quaternion","UnityEngine.Transform"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%original":{"$content":0,"$type":"UnityEngine.Object"},"%position":{"x":0.0,"y":0.0,"z":0.0,"$type":"UnityEngine.Vector3"},"%parent":null},"position":{"x":571.0,"y":-183.0},"guid":"2b933648-4a87-458d-b42d-2a48b8cd1211","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"13"},{"member":{"name":"position","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":-68.0,"y":-87.0},"guid":"c506e7f4-1052-4a79-9da7-e37fbcffa3ae","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"17"},{"member":{"name":"rotation","parameterTypes":null,"targetType":"UnityEngine.Transform","targetTypeName":"UnityEngine.Transform","$version":"A"},"defaultValues":{"target":null},"position":{"x":108.0,"y":11.0},"guid":"b2e5fe20-e0b7-4593-b798-8290a21bbb61","$version":"A","$type":"Unity.VisualScripting.GetMember","$id":"20"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Brick
+      Prefab","$type":"System.String"},"object":null},"position":{"x":-252.0,"y":-197.0},"guid":"8412f5f9-41ef-4742-a804-33500b30c87c","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"23"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"Brick
+      Parent","$type":"System.String"},"object":null},"position":{"x":224.0,"y":126.0},"guid":"c51dcd81-15cf-4677-9346-c92cd0fd22d9","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"25"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"13"},"destinationKey":"enter","guid":"aee6a58f-9974-4eaf-b893-a416851f18dd","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%position","guid":"4516f80e-aa41-4aaa-a80c-e0eba882754c","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%rotation","guid":"aa160c7e-c0c4-4b61-b4df-d43f19e9a8e8","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%original","guid":"77bbbb11-83fa-4611-ac49-a6ab9ad9336b","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"25"},"sourceKey":"value","destinationUnit":{"$ref":"13"},"destinationKey":"%parent","guid":"63d0b38b-38e5-41ab-924a-52fad2cdd55c","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 6969776775625843119, guid: 24496978be9cdd044b7638e5bdff3ce9, type: 3}
